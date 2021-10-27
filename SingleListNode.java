@@ -1,14 +1,21 @@
-public class SingleListNode {
-    public Object getElement() {
+class SingleListNode {
+    private Object element;
+    private SingleListNode nextNode;
 
+    SingleListNode(Object element, SingleListNode nextNode) {
+        this.element = element;
+        this.nextNode = nextNode;
+    }
+
+    Object getElement() {
+        return this.element;
     }
     
-    public SingleListNode getNext() {
-
+    SingleListNode getNext() {
+        return this.nextNode;
     }
 
-    public void setNext(SingleListNode node) {
-
+    void setNext(SingleListNode node) {
+        this.nextNode = node;
     }
-
 }
