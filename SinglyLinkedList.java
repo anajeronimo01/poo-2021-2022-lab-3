@@ -10,15 +10,19 @@ public class SinglyLinkedList {
     }
 
     public Object getFirst() {
-
+        return this.head.getElement();
     }
-
+    
     public Object getLast() {
-
+        return this.tail.getElement();
     }
 
     public Object get(int position) {
-
+        SingleListNode node = this.head;
+        for(int i=0; i<position; i++) {
+            node = node.getNext();
+        }
+        return node.getElement();
     }
 
     public void insertFirst(Object element) {
