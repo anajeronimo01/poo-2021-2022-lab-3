@@ -1,14 +1,28 @@
 public class SinglyLinkedList {
-    public Object getFirst() {
+    private SingleListNode head;
+    private SingleListNode tail;
+    private int numElements;
 
+    public SinglyLinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.numElements = 0;
+    }
+
+    public Object getFirst() {
+        return this.head.getElement();
     }
 
     public Object getLast() {
-
+        return this.tail.getElement();
     }
 
     public Object get(int position) {
-
+        var node = this.head;
+        for(int i=0; i<position; i++) {
+            node = node.getNext();
+        }
+        return node.getElement();
     }
 
     public void insertFirst(Object element) {
