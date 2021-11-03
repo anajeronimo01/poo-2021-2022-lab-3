@@ -36,7 +36,7 @@ public class SinglyLinkedList {
 
     public void insertLast(Object element) {
         SingleListNode newNode = new SingleListNode(element, null);
-        if(head == tail) {
+        if(head == null) {
             head = newNode;
         }
         if(tail != null) {
