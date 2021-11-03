@@ -19,14 +19,16 @@ public class SinglyLinkedList {
 
     public Object get(int position) {
         var node = this.head;
-        for(int i=0; i<position; i++) {
+        for(int i = 0; i < position; i++) {
             node = node.getNext();
         }
         return node.getElement();
     }
 
     public void insertFirst(Object element) {
-
+        SingleListNode singleListNode = new SingleListNode(element, this.head);
+        this.head = singleListNode;
+        this.numElements++;
     }
 
     public void insertLast(Object element) {

@@ -1,12 +1,16 @@
-public class SingleListNode {
+class SingleListNode {
     private Object element;
     private SingleListNode nextNode;
 
     public SingleListNode() {
-        this.element = null;
-        this.nextNode = null;
+        this(null, null);
     }
 
+    public SingleListNode(Object element, SingleListNode nextNode) {
+        this.element = element;
+        this.nextNode = nextNode;
+    }
+\
     public Object getElement() {
         return this.element;
     }
@@ -15,7 +19,7 @@ public class SingleListNode {
         return this.nextNode;
     }
 
-    public void setNext(SingleListNode  node) {
+    public void setNext(SingleListNode node) {
         this.nextNode = node;
     }
 }
