@@ -10,7 +10,7 @@ class SingleListNode {
         this.element = element;
         this.nextNode = nextNode;
     }
-\
+
     public Object getElement() {
         return this.element;
     }

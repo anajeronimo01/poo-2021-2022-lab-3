@@ -40,15 +40,14 @@ public class SinglyLinkedList {
     }
 
     public Object removeFirst() {
-
+        return null;
     }
 
     public Object removeLast() {
-
+        return null;
     }
 
     public Object remove(int position) {
-
+        return null;
     }
-
 }
